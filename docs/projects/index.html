@@ -202,6 +202,9 @@
       } else {
         if(fetchDownloads() === true) {
           setTimeout(dlCountUp, 30000);
+          console.log('fetchdownloads was true');
+        } else {
+          console.log('fetchdownloads was false');
         }
       }
     }
