@@ -179,9 +179,8 @@
           downloads = data;
           if(initial) {
             $('#advancedElectricDlCount').text(downloads - 90);
+            setTimeout(dlCountUp, random(1200, 1600));
           }
-          setTimeout(dlCountUp, random(1200, 1600));
-          return true;
         }
       });
     }
@@ -200,12 +199,8 @@
         setTimeout(() => {dlObj.removeClass('highlight')}, 850);
         setTimeout(dlCountUp, random(1600, 5500));
       } else {
-        if(fetchDownloads() === true) {
-          setTimeout(dlCountUp, 30000);
-          console.log('fetchdownloads was true');
-        } else {
-          console.log('fetchdownloads was false');
-        }
+        fetchDownloads()
+        setTimeout(dlCountUp, 30000);
       }
     }
 
