@@ -113,7 +113,7 @@ body {
 .inner.cover.blur {
   width: fit-content;
   margin: 0 auto;
-  background-color: rgb(64, 64, 64, .6);
+  background-color: rgba(64, 64, 64, .6);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
@@ -148,7 +148,7 @@ body {
 }
 
 .nav.nav-tabs, .tab-content {
-  background-color: rgb(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, .7);
 }
 
 body {
@@ -196,7 +196,7 @@ body {
   }
 
   70% {
-    background-color: #e5c423;
+    background-color: rgba(229, 196, 35, .4);
     color: #222;
   }
 
