@@ -8,6 +8,10 @@ a:hover {
   color: #fff;
 }
 
+a.underline {
+  text-decoration: underline;
+}
+
 /*
  * Base structure
  */
