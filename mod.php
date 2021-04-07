@@ -17,17 +17,11 @@
     }
 
     function curlGet($url) {
-        //  Initiate curl
         $ch = curl_init();
-        // Will return the response, if false it print the response
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-        // Set the url
         curl_setopt($ch, CURLOPT_URL, $url);
-        // Execute
-        $result=curl_exec($ch);
-        // Closing
+        $result = curl_exec($ch);
         curl_close($ch);
         return $result;
     }
